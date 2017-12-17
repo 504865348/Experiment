@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b01417</color>
+    <color name="colorPrimaryDark">#9f1e22</color>
+    <color name="colorAccent">#b22229</color>
+    <color name="snow">#FFFAFA</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+
+    <color name="light_gray">#dedede</color>
+    <color name="background_gray">#ebebeb</color>
+    <color name="click_gray">#d9d9d9</color>
+    <color name="light_gray_text">#c5c5c5</color>
+
+    <color name="light_blue">#7fe0ff</color>
+
+    <color name="black1">#0c0c0c</color>
+    <color name="gray">#c8d3de</color>
+    <color name="lightgray">#c5c5c5</color>
+    <color name="pink">#ff5265</color>
+    <color name="blue">#298ff6</color>
+    <color name="white">#ffffff</color>
+    <color name="so_red">#ff0101</color>
+    <color name="so_gray">#686868</color>
+    <color name="bg_gray">#9a9696</color>
+    <color name="little_gray">#d8d6d6</color>
+    <color name="light_red">#ff3333</color>
+    <color name="light_grey">#FAFAFA</color>
+    <color name="light_tiny_red">#FF6666</color>
+</resources>

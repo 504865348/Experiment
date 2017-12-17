@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View style="@style/horizontal_split" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/home_page_classify_construction"
+                style="@style/home_page_classify_linear_layout">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_construction" />
+
+                <TextView
+                    style="@style/home_page_classify_text"
+                    android:text="房屋建筑" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:id="@+id/home_page_classify_civilization"
+                style="@style/home_page_classify_linear_layout">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_civicism" />
+
+                <TextView
+                    style="@style/home_page_classify_text"
+                    android:text="市政道路" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/horizontal_split" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/home_page_classify_electric"
+                style="@style/home_page_classify_linear_layout">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_electro" />
+
+                <TextView
+                    style="@style/home_page_classify_text"
+                    android:text="城市桥梁" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:id="@+id/home_page_classify_road"
+                style="@style/home_page_classify_linear_layout">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_road" />
+
+                <TextView
+                    style="@style/home_page_classify_text"
+                    android:text="轨道交通" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/horizontal_split" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/home_page_classify_water_cons"
+                style="@style/home_page_classify_linear_layout">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_water_cons" />
+
+                <TextView
+                    style="@style/home_page_classify_text"
+                    android:text="给水排水" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:id="@+id/home_page_classify_railway"
+                style="@style/home_page_classify_linear_layout">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_railway" />
+
+                <TextView
+                    style="@style/home_page_classify_text"
+                    android:text="城市管道" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/horizontal_split" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/home_page_classify_mining"
+                style="@style/home_page_classify_linear_layout">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_mining" />
+
+                <TextView
+                    style="@style/home_page_classify_text"
+                    android:text="园林绿化与附属工程" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:id="@+id/home_page_classify_airport"
+                style="@style/home_page_classify_linear_layout">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_airport" />
+
+                <TextView
+                    style="@style/home_page_classify_text"
+                    android:text="农艺" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/horizontal_split" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:id="@+id/home_page_classify_communication"
+                style="@style/home_page_classify_linear_layout">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_communication" />
+
+                <TextView
+                    style="@style/home_page_classify_text"
+                    android:text="艺术及其它" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/home_page_classify_linear_layout">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/horizontal_split" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.joshua.experiment">
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    //友盟
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    //视频录制
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.CAMERA">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO">
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission>
+
+    <application
+        android:name=".application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.account.LoginActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".activity.search.SearchActivity"/>
+        <activity android:name=".activity.search.SearchResultActivity"/>
+        <activity android:name=".activity.download.DownloadActivity"/>
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule"/>
+
+        <activity android:name=".activity.history.HistoryActivity"/>
+        <activity android:name=".activity.core.TestActivity"/>
+        <activity android:name=".activity.ask.AskQuestionActivity"/>
+        <activity android:name=".activity.record.MyRecordActivity"/>
+        <activity android:name=".activity.billboard.BillboardHotActivity"/>
+        <activity android:name=".activity.billboard.BillboardMoreActivity"/>
+        <activity android:name=".activity.billboard.BillboardPayActivity"/>
+        <activity android:name=".activity.billboard.BillboardCraftsmanActivity"/>
+        <activity android:name=".activity.classify.ClassifyActivity"/>
+        <activity android:name=".activity.find.FriendCircleActivity"/>
+        <activity android:name=".activity.find.FindActivityActivity"/>
+        <activity android:name=".activity.find.FindFriendsActivity"/>
+        <activity android:name=".activity.account.RegisterActivity"/>
+        <activity android:name=".activity.ask.CraftsAnswerQuestionActivity"/>
+        <activity android:name=".activity.answer.MyAskAnswerActivity"/>
+        <activity android:name=".activity.answer.MyAskAnswerCommonActivity"/>
+        <activity android:name=".activity.account.MoneyActivity"/>
+        <activity android:name=".activity.account.RechargeActivity"/>
+        <activity android:name=".activity.craftsHome.CraftsHomeActivity"/>
+        <activity android:name=".activity.albumHome.AlbumHomeActivity"/>
+        <activity android:name=".activity.order.MyOrderActivity"/>
+        <activity android:name=".activity.set.SetActivity"/>
+        <activity android:name=".activity.set.BindActivity"/>
+        <activity android:name=".activity.set.HelpActivity"/>
+        <activity android:name=".activity.set.EditPswActivity"/>
+        <activity android:name=".activity.feedback.FeedbackActivity"/>
+        <activity android:name=".activity.info.EditInfoActivity"/>
+        <activity android:name=".activity.info.SubscribeActivity"/>
+        <activity android:name=".activity.info.CollectActivity"/>
+        <activity android:name=".activity.set.AboutActivity"/>
+        <activity android:name=".activity.hot.CraftsActivity"/>
+        <activity android:name=".activity.hot.SkillsActivity"/>
+        <activity android:name=".activity.hot.PolicyActivity"/>
+        <activity android:name=".activity.hot.ListenActivity"/>
+        <activity android:name=".activity.hot.LookActivity"/>
+        <activity android:name=".activity.record.PostRecordActivity"/>
+        <activity android:name=".activity.record.AlbumListActivity"/>
+        <activity android:name=".activity.record.CreateAlbumActivity"/>
+        <activity android:name=".activity.error.DataErrorActivity"/>
+        <activity android:name=".activity.my.MyAlbumActivity"/>
+        <activity android:name=".activity.my.MyBillboardActivity"/>
+        <activity android:name=".activity.qaclassify.QAClassifyActivity"/>
+        <activity
+            android:name=".activity.record.PlayerFrameActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.account.ProtocolActivity"/>
+        <activity android:name=".activity.account.ForgetPasswordActivity"/>
+        <activity android:name=".activity.answer.QuestionDetailActivity"/>
+        <activity android:name=".activity.my.MyBillboardCraftsActivity"/>
+        <activity android:name=".activity.my.MyBillboardMoreActivity"/>
+        <activity android:name=".activity.my.MyBillboardHotActivity"/>
+        <activity android:name=".activity.my.MyBillboardPayActivity"/>
+        <activity android:name=".wxapi.WXEntryActivity">
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent100424468"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59a8cb994ad1566513002614">
+        </meta-data>
+
+        <activity android:name=".activity.other.MySubscribeActivity">
+        </activity>
+        <activity android:name=".activity.other.MyCollectActivity">
+        </activity>
+        <activity android:name=".activity.other.MyBuyActivity">
+        </activity>
+        <activity android:name=".activity.billboard.joshua.HotActivity">
+        </activity>
+        <activity android:name=".activity.billboard.joshua.PayActivity">
+        </activity>
+        <activity
+            android:name=".activity.record.RecordActivity"
+            android:theme="@style/FruitDetailTheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".activity.other.ShowPhotoActivity">
+        </activity>
+        <activity android:name=".activity.other.VideoBuyTimesActivity">
+        </activity>
+    </application>
+
+</manifest>

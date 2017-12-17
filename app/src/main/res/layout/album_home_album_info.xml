@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+    <ImageView
+        android:id="@+id/album_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="325dp"
+        android:src="@drawable/video_player_share"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/album_detail_cover"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/album_detail_cover"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="60dp" />
+
+        <LinearLayout
+            android:id="@+id/album_detail_ll_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/album_detail_cover"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/album_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="专辑名字"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+                <TextView
+                    style="@style/album_detail_intro_small"
+                    android:text="工匠："/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/album_detail_crafts_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+                <TextView
+                    style="@style/album_detail_intro_small"
+                    android:text="分类："/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/album_detail_classification" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+                <TextView
+                    style="@style/album_detail_intro_small"
+                    android:text="模块："/>
+                <TextView
+                    android:id="@+id/album_detail_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:visibility="invisible"
+                    style="@style/album_detail_intro_small"
+                    android:layout_marginLeft="20dp"
+                    android:text="播放量："/>
+                <TextView
+                    android:id="@+id/album_detail_play_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/album_subscribe"
+            android:layout_width="124dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="52dp"
+            android:background="@drawable/check_border"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:text="订阅" />
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/album_buy"
+            android:layout_width="124dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="210dp"
+            android:background="@drawable/check_border"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:text="点击购买" />
+
+    </RelativeLayout>
+</RelativeLayout>

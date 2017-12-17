@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/my_info_my_buys"
+            style="@style/my_info_linear">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/my_buy"/>
+
+            <TextView
+                style="@style/my_info_personal"
+                android:text="我的购买"/>
+
+            <ImageButton
+                android:id="@+id/buyform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/next_more"/>
+        </LinearLayout>
+
+        <View style="@style/horizontal_split"/>
+        <LinearLayout
+            android:id="@+id/my_info_public_my_orders"
+            style="@style/my_info_linear">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/my_info_orders"/>
+
+            <TextView
+                style="@style/my_info_personal"
+                android:text="我的订单"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/next_more"/>
+        </LinearLayout>
+
+        <View style="@style/horizontal_split"/>
+
+        <LinearLayout
+            android:id="@+id/my_info_public_my_coins"
+            style="@style/my_info_linear"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/my_info_coins"/>
+
+            <TextView
+                style="@style/my_info_personal"
+                android:text="我的匠币"/>
+
+            <TextView
+                android:id="@+id/my_info_public_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"
+                android:text="00.00"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/next_more"/>
+        </LinearLayout>
+
+        <View style="@style/horizontal_split"/>
+
+        <LinearLayout
+            android:id="@+id/my_info_public_my_q_a"
+            style="@style/my_info_linear">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/my_info_q_a"/>
+
+            <TextView
+                style="@style/my_info_personal"
+                android:text="我的问答"/>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/my_info_public_q_a_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/my_info_one"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/next_more"/>
+
+        </LinearLayout>
+
+        <View style="@style/horizontal_split_15"/>
+
+        <LinearLayout
+            android:id="@+id/my_info_public_feedback"
+            style="@style/my_info_linear">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/my_info_feedback"/>
+
+            <TextView
+                style="@style/my_info_personal"
+                android:text="意见反馈"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/next_more" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_split"/>
+
+        <LinearLayout
+            android:id="@+id/my_info_public_sets"
+            style="@style/my_info_linear">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/my_info_sets"/>
+
+            <TextView
+                style="@style/my_info_personal"
+                android:text="设置"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/next_more"/>
+        </LinearLayout>
+
+        <View style="@style/horizontal_split"/>
+
+    </LinearLayout>
+
+</LinearLayout>

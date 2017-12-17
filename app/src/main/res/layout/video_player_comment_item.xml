@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/video_player_comment_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/friends_icon"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/video_player_comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/video_player_comment_icon"
+        android:padding="10dp"
+        android:text="用户名"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/video_player_comment_content"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/video_player_comment_name"
+        android:layout_below="@id/video_player_comment_name"
+        android:paddingLeft="10dp"
+        android:text="评论内容评论内容评论内容"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>

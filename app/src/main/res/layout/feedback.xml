@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/feedback_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:navigationIcon="@drawable/back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="意见反馈"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View style="@style/horizontal_split" />
+
+    <TextView
+        android:id="@+id/feedback_ques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:text="问题和意见"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/feedback_edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/whit"
+        android:gravity="top"
+        android:hint=" 请留下您宝贵的意见"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="7"
+        android:scrollbars="vertical"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/feedback_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_light_red_shape"
+        android:text="提交"
+        android:textColor="#FFF"/>
+
+</LinearLayout>

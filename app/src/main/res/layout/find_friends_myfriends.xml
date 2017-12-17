@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <View style="@style/horizontal_split"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="敬请期待"
+    android:textSize="18sp"
+    android:layout_margin="16dp"/>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/find_friends_phone"-->
+        <!--style="@style/friend_linear">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/find_friends_telephone_img"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:src="@drawable/find_telephone"/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@id/find_friends_telephone_img"-->
+            <!--android:orientation="vertical">-->
+            <!--<TextView-->
+                <!--android:id="@+id/find_friends_telephone_text"-->
+                <!--style="@style/search_interface_sub_title"-->
+                <!--android:text="找手机通讯录朋友" />-->
+        <!--</LinearLayout>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/find_friends_telephone_next"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/next_big" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<View style="@style/horizontal_split"/>-->
+
+    <RelativeLayout
+        android:id="@+id/find_friends_wechat"
+        style="@style/friend_linear"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/find_friends_wechat_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/find_wechat" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/find_friends_wechat_img"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/find_friends_wechat_text"
+                style="@style/search_interface_sub_title"
+                android:text="找微信朋友" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/find_friends_wechat_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/next_big" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <RelativeLayout
+        android:id="@+id/find_friends_qq"
+        style="@style/friend_linear"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/find_friends_qq_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/find_qq"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/find_friends_qq_img"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/find_friends_qq_text"
+                style="@style/search_interface_sub_title"
+                android:text="找QQ朋友" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/find_friends_qq_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/next_big" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_split"/>
+
+</LinearLayout>

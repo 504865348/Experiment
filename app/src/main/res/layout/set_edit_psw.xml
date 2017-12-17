@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/edit_psw_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:navigationIcon="@drawable/back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="修改密码"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View style="@style/horizontal_split" />
+
+    <LinearLayout
+        android:id="@+id/old_psw"
+        style="@style/my_info_linear">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16dp"
+            android:text="旧密码" />
+       <EditText
+           android:id="@+id/etOldPsw"
+           android:layout_width="280dp"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:layout_marginLeft="10dp"
+           android:hint=" 请输入当前密码"
+           android:inputType="textPassword"
+           android:textColor="@color/black"
+           android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <LinearLayout
+        android:id="@+id/new_psw"
+        style="@style/my_info_linear">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16dp"
+            android:text="新密码" />
+
+        <EditText
+            android:id="@+id/etNewPsw"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:hint=" 6-16位数字或字母"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <LinearLayout
+        android:id="@+id/ensure_psw"
+        style="@style/my_info_linear">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="确认密码"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <EditText
+            android:id="@+id/etEnsurePsw"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:hint=" 请输入当前密码"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <Button
+        android:id="@+id/psw_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_light_red_shape"
+        android:text="确定"
+        android:textColor="#FFF"/>
+
+</LinearLayout>

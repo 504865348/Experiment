@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/my_billboard_pay_rank"
+            style="@style/search_interface_sub_title"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="1" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/my_billboard_pay_pic"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:src="@drawable/photo_two"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="25dp"
+            app:riv_border_width="1dp"
+            app:riv_border_color="@color/red"
+            app:riv_oval="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/my_billboard_pay_pic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/my_billboard_pay_name"
+                style="@style/search_interface_sub_title"
+                android:text="节目标题" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/my_billboard_pay_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/downblue" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_split"/>
+
+</LinearLayout>
+
+
+

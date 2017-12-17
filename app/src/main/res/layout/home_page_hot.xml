@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 轮播图片 -->
+    <com.youth.banner.Banner
+        android:id="@+id/home_page_hot_banner"
+        android:layout_width="match_parent"
+      android:layout_height="150dp"
+        app:image_scale_type="center_crop">
+    </com.youth.banner.Banner>
+
+    <include layout="@layout/home_page_hot_middle" />
+
+    <View style="@style/horizontal_split_black"/>
+
+    <!-- 中部导航 -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 大国工匠标题栏 -->
+            <include layout="@layout/home_page_hot_crafts" />
+
+            <!-- 匠心独运标题栏 -->
+            <include layout="@layout/home_page_hot_skills" />
+
+            <!-- 讲政策标题栏 -->
+            <include layout="@layout/home_page_hot_policy" />
+
+            <!-- 听专题标题栏 -->
+            <include layout="@layout/home_page_hot_listen" />
+
+            <!-- 看利器标题栏 -->
+            <include layout="@layout/home_page_hot_look" />
+
+        </LinearLayout>
+
+
+
+    <View style="@style/horizontal_split_wider"/>
+
+    <!-- ScrollView 的 5 个选项 -->
+
+</LinearLayout>
+</ScrollView>

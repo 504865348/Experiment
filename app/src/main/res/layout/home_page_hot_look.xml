@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/home_page_hot_title_text"
+            android:text="看利器"/>
+
+        <TextView
+            android:id="@+id/home_page_hot_more_look"
+            style="@style/home_page_hot_more_text"/>
+
+    </LinearLayout>
+
+    <View style="@style/horizontal_split_black"/>
+
+    <include layout="@layout/empty_classify_e"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hot_look_rv"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <View style="@style/horizontal_split_wide"/>
+
+</LinearLayout>

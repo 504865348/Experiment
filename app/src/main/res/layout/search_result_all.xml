@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/search_interface_title"
+            android:text="专辑"/>
+        <TextView
+            style="@style/search_interface_sub_title"
+            android:text="共"/>
+        <TextView
+            android:id="@+id/search_interface_all_count"
+            style="@style/search_interface_sub_title"
+            android:text="XXX"/>
+        <TextView
+            style="@style/search_interface_sub_title"
+            android:text="个结果"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next_small"/>
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/search_interface_album_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/search_interface_cover"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/search_interface_album_cover"
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:id="@+id/search_interface_album_name"
+                style="@style/search_interface_sub_title"
+                android:text="标题"/>
+            <TextView
+                android:id="@+id/search_interface_album_name_info"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/light_gray_text"
+                android:text="简介简介简介"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/search_interface_play_times"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="XXX"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_interface_album_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/next_big"/>
+    </RelativeLayout>
+
+</LinearLayout>

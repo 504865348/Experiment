@@ -1,0 +1,396 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryDark">@color/pink</item>
+        <item name="colorAccent">@color/pink</item>
+        <!-- APP 背景色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!-- ctr -->
+    <!-- RadioButton 的样式 -->
+    <style name="Main_RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/radio_button_text_selector</item>
+    </style>
+
+    <!-- 首页->热门->中间按钮 中的字体 -->
+    <style name="home_page_hot_middle_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <!-- 首页->热门->ScrollView 标题字体 -->
+    <style name="home_page_hot_title_text">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 首页->热门->ScrollView 中“更多”的字体 -->
+    <style name="home_page_hot_more_text">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableRight">@drawable/next_more</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/ll_click_selector</item>
+        <item name="android:text">更多</item>
+    </style>
+
+    <!-- 首页->热门->底部 中的字体 -->
+    <style name="home_page_hot_bottom_text">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- 首页->热门->分类 中的 LinearLayout -->
+    <style name="home_page_classify_linear_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/ll_click_selector</item>
+    </style>
+
+    <!-- 首页->热门->中部5个按钮 的 LinearLayout -->
+    <style name="home_page_hot_middle_linear_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/ll_click_selector</item>
+    </style>
+
+    <!-- 首页->热门->分类 中的字体 -->
+    <style name="home_page_classify_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <!-- 首页->我的信息 中的字体1 -->
+    <style name="my_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- 首页->我的信息 中的线性布局 -->
+    <style name="my_info_linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ll_click_selector</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="my_info_personal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 水平灰色宽分割线样式 -->
+    <style name="horizontal_split">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/background_gray</item>
+    </style>
+
+    <!-- 水平灰色宽分割线样式 -->
+    <style name="horizontal_split_wide">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@color/background_gray</item>
+    </style>
+
+    <!-- 水平灰色超宽分割线样式 -->
+    <style name="horizontal_split_wider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">@color/background_gray</item>
+    </style>
+
+    <!-- 水平灰色20dp分割线样式 -->
+    <style name="horizontal_split_20">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@color/background_gray</item>
+    </style>
+
+    <!-- 水平灰色15dp分割线样式 -->
+    <style name="horizontal_split_15">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:background">@color/background_gray</item>
+    </style>
+
+    <!-- 水平黑色分割线样式 -->
+    <style name="horizontal_split_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <!-- 水平黑色分割线样式 -->
+    <style name="vertical_split_black">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <!-- 问答->分类中线性布局的样式 -->
+    <style name="q_a_linear_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/ll_click_selector</item>
+    </style>
+
+    <!-- 问答->分类中字体的样式 -->
+    <style name="q_a_classify_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- 首页->热门->底部 中的字体 -->
+    <style name="q_a_famous_name_text">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- 首页-分类 -> TabLayout -->
+    <style name="TabStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 充值-> RadioButton 中字体的样式 -->
+    <style name="recharge_radio_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/recharge_radio_btn_selector</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+
+    <!-- 充值-> RadioButton 前字体的样式 -->
+    <style name="recharge_radio_button_pre">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- 播放界面专辑信息字体的样式 -->
+    <style name="video_player_info_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#c5c5c5</item>
+    </style>
+
+    <!-- 搜索界面 RadioButton 样式 -->
+    <style name="search_interface_radio_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- 搜索界面 大标题 样式 -->
+    <style name="search_interface_title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <!-- 搜索界面 结果 样式 -->
+    <style name="search_interface_sub_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <!-- 榜单 样式 -->
+    <style name="billboard_interface_sub_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 专辑详情中的小字体 -->
+    <style name="album_detail_intro_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/light_gray_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 专辑详情中的小字体 -->
+    <style name="album_particulars_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/light_gray_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 专辑节目 item 的小字体 -->
+    <style name="album_program_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <!-- 旁听中的字体 -->
+    <style name="question_audit_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/light_gray_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <!-- 我的榜单工匠介绍中的字体 -->
+    <style name="my_billboard_crafts">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/light_gray_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 我的榜单中三个榜单标题的字体 -->
+    <style name="my_billboard_board_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 我的榜单中榜单项的字体 -->
+    <style name="my_billboard_board_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 设置 -> LinearLayout -->
+    <style name="set_linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/ll_click_selector</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <!-- 设置 -> 字体 -->
+    <style name="set_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <!-- 设置 -->
+    <style name="set">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 榜单 -> LinearLayout -->
+    <style name="billboard_linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/ll_click_selector</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- 找匠友-我的朋友 -> LinearLayout -->
+    <style name="friend_linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/ll_click_selector</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MDTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="FruitDetailTheme" parent="MDTheme"/>
+</resources>

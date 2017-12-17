@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/set_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/back">
+        <!-- app:navigationIcon="@drawable/back" -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="设置"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/set_ll_bind"
+        style="@style/set_linear"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/set_text"
+            android:text="账号绑定" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/phone" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/find_wechat" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/find_qq" />
+
+        <ImageButton
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.07"
+            android:background="@color/white"
+            android:src="@drawable/next_more" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:id="@+id/set_ll_change_pwd"
+        style="@style/set_linear">
+        <TextView
+            android:layout_marginLeft="20dp"
+            style="@style/set_text"
+            android:text="修改密码"/>
+        <ImageButton
+            android:background="@color/white"
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next_more"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/set_ll_continue"
+        style="@style/set_linear">
+        <TextView
+            android:layout_marginLeft="20dp"
+            style="@style/set_text"
+            android:text="断点续听"/>
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sc_listen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false">
+        </android.support.v7.widget.SwitchCompat>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:id="@+id/set_ll_mobile"
+        style="@style/set_linear">
+        <TextView
+            android:layout_marginLeft="20dp"
+            style="@style/set_text"
+            android:text="2G/3G/4G播放和下载"/>
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sc_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false">
+        </android.support.v7.widget.SwitchCompat> 
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:id="@+id/set_ll_clear"
+        style="@style/set_linear">
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/set_text"
+            android:layout_marginLeft="20dp"
+            android:text="清理占用空间" />
+        <TextView
+            android:id="@+id/tv_cache"
+            style="@style/my_billboard_board_item" />
+        <ImageButton
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next_more"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/set_ll_recommend"
+        style="@style/set_linear">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/set_text"
+            android:layout_marginLeft="20dp"
+            android:text="推送设置" />
+
+        <ImageButton
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next_more"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:id="@+id/set_ll_help"
+        style="@style/set_linear">
+        <TextView
+            android:id="@+id/textView15"
+            style="@style/set_text"
+            android:text="帮助中心"/>
+        <ImageButton
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next_more"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:id="@+id/set_ll_about"
+        style="@style/set_linear">
+        <TextView
+            style="@style/set_text"
+            android:text="关于我们"/>
+        <ImageButton
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next_more"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+
+    <Button
+        android:id="@+id/set_btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_light_red_shape"
+        android:text="退出登录"
+        android:textColor="#FFF"/>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.info.EditInfoActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/edit_my_info_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:navigationIcon="@drawable/back">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="编辑资料"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View style="@style/horizontal_split" />
+
+    <LinearLayout
+        style="@style/my_info_linear">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16dp"
+            android:text="头像" />
+
+        <ImageView
+            android:id="@+id/iv_my_image"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/album_detail_cover" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <LinearLayout
+        style="@style/my_info_linear">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16dp"
+            android:text="昵称" />
+
+        <EditText
+            android:id="@+id/etNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="填写昵称"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <LinearLayout
+        style="@style/my_info_linear">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="简介"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <EditText
+            android:id="@+id/etIntroduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="简单介绍一下自己"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <LinearLayout
+        style="@style/my_info_linear">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="性别"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="设置性别"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <LinearLayout
+        style="@style/my_info_linear">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="生日"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tvBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="设置生日"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <LinearLayout style="@style/my_info_linear">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="所在地"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="选择所在地"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <Button
+        android:id="@+id/my_info_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_light_red_shape"
+        android:text="保存"
+        android:textColor="#FFF"/>
+
+</LinearLayout>

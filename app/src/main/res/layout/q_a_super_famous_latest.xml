@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/home_page_hot_title_text"
+            android:text="超级红人"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+    </LinearLayout>
+
+    <View style="@style/horizontal_split_black"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="4dp"
+        android:id="@+id/hot_crafts_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <View style="@style/horizontal_split_wider"/>
+
+</LinearLayout>

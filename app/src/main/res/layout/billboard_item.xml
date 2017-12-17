@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+    <TextView
+        android:id="@+id/tv_program_billboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="节目榜单"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <View style="@style/horizontal_split"/>
+
+    <RelativeLayout
+        android:id="@+id/billboard_hot"
+        style="@style/billboard_linear">
+        <ImageView
+            android:id="@+id/billboard_hot_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/billboard_hot" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/billboard_hot_img"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/billboard_hot_name"
+                style="@style/billboard_interface_sub_title"
+                android:text="最火节目飙升榜" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="82dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/billboard_hot_program1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="82dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/billboard_hot_program2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/billboard_hot_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/next_big" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <RelativeLayout
+        android:id="@+id/billboard_more"
+        style="@style/billboard_linear">
+
+        <ImageView
+            android:id="@+id/billboard_more_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/billboard_more" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/billboard_more_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/billboard_more_name"
+                style="@style/billboard_interface_sub_title"
+                android:text="最多订阅经典榜" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="82dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/billboard_more_program1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="82dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/billboard_more_program2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/billboard_more_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/next_big" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <RelativeLayout
+        android:id="@+id/billboard_pay"
+        style="@style/billboard_linear">
+
+        <ImageView
+            android:id="@+id/billboard_pay_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/billboard_pay" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/billboard_pay_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/billboard_pay_name"
+                style="@style/billboard_interface_sub_title"
+                android:text="付费精品畅销榜" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="82dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/billboard_pay_program1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="82dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/billboard_pay_program2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:textColor="@color/light_gray_text"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/billboard_pay_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/next_big" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <View style="@style/horizontal_split_wide"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_craftsman_billboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="工匠榜单"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View style="@style/horizontal_split"/>
+
+        <RelativeLayout
+            android:id="@+id/billboard_craftsman"
+            style="@style/billboard_linear">
+            <ImageView
+                android:id="@+id/billboard_crafts_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/billboard_crafts" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/billboard_crafts_img"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/billboard_crafts_name"
+                    style="@style/billboard_interface_sub_title"
+                    android:text="最大国工匠榜" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/light_gray_text"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="@color/light_gray_text"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="82dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/billboard_crafts1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/light_gray_text"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="82dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/billboard_crafts2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:textColor="@color/light_gray_text"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/billboard_crafts_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next_big"
+                android:layout_alignTop="@+id/billboard_crafts_img"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_split"/>
+
+    </LinearLayout>
+</LinearLayout>

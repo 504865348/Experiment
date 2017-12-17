@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+
+    <View style="@style/horizontal_split"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/find_friends_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/find_friends" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/find_friends_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/find_friends_name"
+                style="@style/search_interface_sub_title"
+                android:text="找匠友" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/find_friends_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/next_big" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_split"/>
+    <View style="@style/horizontal_split_wide"/>
+
+</LinearLayout>

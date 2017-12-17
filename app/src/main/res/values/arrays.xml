@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="albumTypes">
+        <item>房屋建筑</item>
+        <item>市政道路</item>
+        <item>城市桥梁</item>
+        <item>轨道交通</item>
+        <item>给水排水</item>
+        <item>城市管道</item>
+        <item>园林绿化与附属工程</item>
+        <item>农艺</item>
+        <item>艺术及其它</item>
+    </string-array>
+    <string-array name="albumModels">
+        <item>匠心独运</item>
+        <item>讲政策</item>
+        <item>听专题</item>
+        <item>看利器</item>
+    </string-array>
+
+
+    <string-array name="cost">
+        <item>0</item>
+        <item>0.01</item>
+        <item>1</item>
+        <item>3</item>
+        <item>8</item>
+        <item>12</item>
+        <item>18</item>
+        <item>25</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+</resources>

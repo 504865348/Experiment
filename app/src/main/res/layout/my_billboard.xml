@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_info_billboard_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:navigationIcon="@drawable/back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的榜单"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View style="@style/horizontal_split"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/my_info_billboard_crafts"
+            style="@style/my_info_linear">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/my_info_billboard_crafts"/>
+
+            <TextView
+                style="@style/my_info_personal"
+                android:text="最大国工匠榜"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/next_more"/>
+        </LinearLayout>
+
+        <View style="@style/horizontal_split"/>
+
+        <LinearLayout
+            android:id="@+id/my_info_billboard_hot"
+            style="@style/my_info_linear">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/my_info_billboard_hot"/>
+
+            <TextView
+                style="@style/my_info_personal"
+                android:text="最火节目飙升榜"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/next_more"/>
+        </LinearLayout>
+
+        <View style="@style/horizontal_split"/>
+
+        <LinearLayout
+            android:id="@+id/my_info_billboard_more"
+            style="@style/my_info_linear"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/my_info_billboard_more"/>
+
+            <TextView
+                style="@style/my_info_personal"
+                android:text="最多订阅经典榜"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/next_more"/>
+
+        </LinearLayout>
+
+        <View style="@style/horizontal_split"/>
+
+        <LinearLayout
+            android:id="@+id/my_info_billboard_pay"
+            style="@style/my_info_linear"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/my_info_billboard_pay"/>
+            <TextView
+                style="@style/my_info_personal"
+                android:text="付费精品畅销榜"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/next_more"/>
+
+        </LinearLayout>
+
+        <View style="@style/horizontal_split"/>
+
+    </LinearLayout>
+
+</LinearLayout>

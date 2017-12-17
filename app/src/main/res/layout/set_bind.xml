@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bind_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:navigationIcon="@drawable/back">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="账号绑定"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View style="@style/horizontal_split_wide" />
+
+    <LinearLayout
+        android:id="@+id/bind_tel"
+        style="@style/my_info_linear">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/find_telephone" />
+
+        <TextView
+            style="@style/set"
+            android:text="手机号绑定" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:hint="未绑定"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <LinearLayout
+        android:id="@+id/bind_wechat"
+        style="@style/my_info_linear">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/find_wechat" />
+        <TextView
+            style="@style/set"
+            android:text="微信绑定" />
+        <TextView
+            android:id="@+id/tv_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:hint="未绑定" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_split"/>
+
+    <LinearLayout
+        android:id="@+id/bind_qq"
+        style="@style/my_info_linear">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/find_qq" />
+        <TextView
+            style="@style/set"
+            android:text="QQ绑定" />
+        <TextView
+            android:id="@+id/tv_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:hint="未绑定" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_split" />
+
+</LinearLayout>

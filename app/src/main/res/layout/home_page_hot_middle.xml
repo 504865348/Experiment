@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        style="@style/home_page_hot_middle_linear_layout">
+        <ImageView
+            android:id="@+id/hot_middle_image_crafts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hot_middle_crafts_shape"
+            android:src="@drawable/hot_middle_crafts" />
+        <TextView
+            style="@style/home_page_hot_middle_text"
+            android:text="大国工匠" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/home_page_hot_middle_linear_layout">
+
+        <ImageView
+            android:id="@+id/hot_middle_image_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hot_middle_skills_shape"
+            android:src="@drawable/hot_middle_skills"
+            />
+
+        <TextView
+            style="@style/home_page_hot_middle_text"
+            android:text="匠心独运"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/home_page_hot_middle_linear_layout">
+
+        <ImageView
+            android:id="@+id/hot_middle_image_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hot_middle_policy_shape"
+            android:src="@drawable/hot_middle_policy"
+            />
+
+        <TextView
+            style="@style/home_page_hot_middle_text"
+            android:text="讲政策"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/home_page_hot_middle_linear_layout">
+
+        <ImageView
+            android:id="@+id/hot_middle_image_listen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hot_middle_listen_shape"
+            android:src="@drawable/hot_middle_listen"
+            />
+
+        <TextView
+            style="@style/home_page_hot_middle_text"
+            android:text="听专题"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/home_page_hot_middle_linear_layout">
+
+        <ImageView
+            android:id="@+id/hot_middle_image_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hot_middle_look_shape"
+            android:src="@drawable/hot_middle_look"
+            />
+
+        <TextView
+            style="@style/home_page_hot_middle_text"
+            android:text="看利器"/>
+
+    </LinearLayout>
+
+</LinearLayout>

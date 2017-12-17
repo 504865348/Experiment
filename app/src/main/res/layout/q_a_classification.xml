@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/q_a_construction"
+            style="@style/q_a_linear_layout">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/icon_construction"/>
+            <TextView
+                style="@style/q_a_classify_text"
+                android:text="房屋建筑"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q_a_civilization"
+            style="@style/q_a_linear_layout">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/icon_civicism"/>
+            <TextView
+                style="@style/q_a_classify_text"
+                android:text="市政道路"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q_a_electric"
+            style="@style/q_a_linear_layout">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/icon_electro"/>
+            <TextView
+                style="@style/q_a_classify_text"
+                android:text="城市桥梁"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q_a_road"
+            style="@style/q_a_linear_layout">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/icon_road"/>
+            <TextView
+                style="@style/q_a_classify_text"
+                android:text="轨道交通"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q_a_water_cons"
+            style="@style/q_a_linear_layout">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/icon_water_cons"/>
+            <TextView
+                style="@style/q_a_classify_text"
+                android:text="给水排水"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/q_a_railway"
+            style="@style/q_a_linear_layout">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/icon_railway"/>
+            <TextView
+                style="@style/q_a_classify_text"
+                android:text="城市管道"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q_a_mining"
+            style="@style/q_a_linear_layout">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/icon_mining"/>
+            <TextView
+                style="@style/q_a_classify_text"
+                android:text="园林绿化与附属工程"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q_a_airport"
+            style="@style/q_a_linear_layout">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/icon_airport"/>
+            <TextView
+                style="@style/q_a_classify_text"
+                android:text="农艺"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q_a_communication"
+            style="@style/q_a_linear_layout">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/icon_communication"/>
+            <TextView
+                style="@style/q_a_classify_text"
+                android:text="艺术及其它"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
