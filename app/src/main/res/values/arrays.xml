@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="albumTypes">
-        <item>房屋建筑</item>
-        <item>市政道路</item>
-        <item>城市桥梁</item>
-        <item>轨道交通</item>
-        <item>给水排水</item>
-        <item>城市管道</item>
-        <item>园林绿化与附属工程</item>
-        <item>农艺</item>
-        <item>艺术及其它</item>
+        <item>@string/type1</item>
+        <item>@string/type2</item>
+        <item>@string/type3</item>
+        <item>@string/type4</item>
+        <item>@string/type5</item>
+        <item>@string/type6</item>
+        <item>@string/type7</item>
+        <item>@string/type8</item>
+        <item>@string/type9</item>
     </string-array>
     <string-array name="albumModels">
-        <item>匠心独运</item>
-        <item>讲政策</item>
-        <item>听专题</item>
-        <item>看利器</item>
+        <item>@string/youxiao</item>
+        <item>@string/chuzhong</item>
+        <item>@string/gaozhong</item>
+        <item>@string/daxue</item>
+        <item>@string/minjian</item>
     </string-array>
 
 

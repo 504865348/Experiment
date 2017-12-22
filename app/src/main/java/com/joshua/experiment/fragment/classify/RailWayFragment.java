@@ -63,7 +63,7 @@ public class RailWayFragment extends BaseFragment {
     }
 
     private void getDataFromServer() {
-        getRailWay("城市管道");
+        getRailWay(getResources().getString(R.string.type6));
     }
 
     private void getRailWay(String keyWord) {

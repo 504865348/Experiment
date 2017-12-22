@@ -16,7 +16,7 @@ public class Album {
     private String subscribeTimes; //订阅量
     private String classifyName; //分类名
     private String introduction; //简介
-    private String model; //所属模块(匠心独运 讲政策 听专题 看利器)
+    private String model; //所属模块(初中 高中 大学 民间)
 
     public String getAlbumID() {
         return albumID;

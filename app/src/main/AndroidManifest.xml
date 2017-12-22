@@ -172,6 +172,7 @@
         </activity>
         <activity android:name=".activity.other.VideoBuyTimesActivity">
         </activity>
+        <activity android:name=".activity.hot.YouXiaoActivity"/>
     </application>
 
 </manifest>

@@ -9,9 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center_vertical">
+
         <TextView
             style="@style/home_page_hot_title_text"
-            android:text="匠心独运"/>
+            android:text="@string/chuzhong"/>
         <TextView
             android:id="@+id/home_page_hot_more_skills"
             style="@style/home_page_hot_more_text"/>

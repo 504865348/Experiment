@@ -63,7 +63,7 @@ public class MiningFragment extends BaseFragment {
     }
 
     private void getDataFromServer() {
-        getMining("园林绿化与附属工程");
+        getMining(getResources().getString(R.string.type7));
     }
 
     private void getMining(String keyWord) {

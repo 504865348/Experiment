@@ -96,6 +96,7 @@
             <!-- 搜索内容 -->
             <!-- 问答 -->
             <TextView
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -104,6 +105,7 @@
                 android:textSize="14sp"/>
 
             <FrameLayout
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -153,7 +155,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="工匠"
+                android:text="名师"
                 android:textColor="@color/black"
                 android:textSize="14sp"/>
 

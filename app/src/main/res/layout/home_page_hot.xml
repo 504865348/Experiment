@@ -34,16 +34,16 @@
             <!-- 大国工匠标题栏 -->
             <include layout="@layout/home_page_hot_crafts" />
 
-            <!-- 匠心独运标题栏 -->
+            <!-- 初中标题栏 -->
             <include layout="@layout/home_page_hot_skills" />
 
-            <!-- 讲政策标题栏 -->
+            <!-- 高中标题栏 -->
             <include layout="@layout/home_page_hot_policy" />
 
-            <!-- 听专题标题栏 -->
+            <!-- 大学标题栏 -->
             <include layout="@layout/home_page_hot_listen" />
 
-            <!-- 看利器标题栏 -->
+            <!-- 民间标题栏 -->
             <include layout="@layout/home_page_hot_look" />
 
         </LinearLayout>

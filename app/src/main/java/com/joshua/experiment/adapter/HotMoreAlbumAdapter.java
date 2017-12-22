@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * Created by nzz on 2017/7/28.
- * 首页-热门-更多(专辑--匠心独运，讲政策，听专题，看利器)
+ * 首页-热门-更多(专辑--初中，高中，大学，民间)
  */
 
 public class HotMoreAlbumAdapter extends RecyclerView.Adapter<HotMoreAlbumAdapter.MyViewHolder> implements View.OnClickListener {

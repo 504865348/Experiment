@@ -63,7 +63,7 @@ public class MechanicalFragment extends BaseFragment {
     }
 
     private void getDataFromServer() {
-        getMechanical("城市桥梁");
+        getMechanical(getResources().getString(R.string.type3));
     }
 
     private void getMechanical(String keyWord) {

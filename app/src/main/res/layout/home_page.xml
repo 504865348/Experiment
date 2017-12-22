@@ -86,9 +86,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:text="名师"
                 android:textColor="@color/black"
-                android:textSize="16sp"
-                android:text="工匠"/>
+                android:textSize="16sp"/>
         </LinearLayout>
 
     </LinearLayout>

@@ -141,7 +141,7 @@ public class MyRecordAdapter extends BaseAdapter {
              * 获取该文件夹下的所有文件
              */
             String path = Environment.getExternalStorageDirectory().getPath();
-            File mediaStorageDir = new File(path + "/crafts_videos");
+            File mediaStorageDir = new File(path + "/bdsy_videos");
             File[] files = mediaStorageDir.listFiles();
 
             for (int i = 0; i < files.length; i++) {

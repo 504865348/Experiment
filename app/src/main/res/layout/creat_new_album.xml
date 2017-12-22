@@ -129,25 +129,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:layout_marginLeft="15dp"
-        android:text="匠心独运----对工程的奇妙想法和做法" />
+        android:text="初中----对工程的奇妙想法和做法" />
     <TextView
         android:textSize="14sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="讲政策----解读行业重大政策法规" />
+        android:text="高中----解读行业重大政策法规" />
     <TextView
         android:textSize="14sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="听专题----讲解工程领域热门话题" />
+        android:text="大学----讲解工程领域热门话题" />
     <TextView
         android:textSize="14sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="看利器----优秀工程材料、产品、机械的宣传广告" />
+        android:text="民间----优秀工程材料、产品、机械的宣传广告" />
 
     <Button
         android:layout_marginTop="30dp"

@@ -63,7 +63,7 @@ public class HousesFragment extends BaseFragment {
     }
 
     private void getDataFromServer() {
-        getHouse("房屋建筑");
+        getHouse(getResources().getString(R.string.type1));
     }
 
     private void getHouse(String keyWord) {

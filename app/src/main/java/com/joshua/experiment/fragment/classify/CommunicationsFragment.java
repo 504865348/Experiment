@@ -63,7 +63,7 @@ public class CommunicationsFragment extends BaseFragment {
     }
 
     private void getDataFromServer() {
-        getCommunications("艺术及其它");
+        getCommunications(getResources().getString(R.string.type9));
     }
 
     private void getCommunications(String keyWord) {

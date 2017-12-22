@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">必得实验</string>
     <string name="title_activity_billboard_hot">BillboardHotActivity</string>
+    <string name="youxiao">幼小</string>
+    <string name="chuzhong">初中</string>
+    <string name="gaozhong">高中</string>
+    <string name="daxue">大学</string>
+    <string name="minjian">民间</string>
+
+
+    <string name="type1">趣味科普</string>
+    <string name="type2">物理实验</string>
+    <string name="type3">考点必看</string>
+    <string name="type4">化学实验</string>
+    <string name="type5">科研殿堂</string>
+    <string name="type6">生物实验</string>
+    <string name="type7">经验分享</string>
+    <string name="type8">自然实验</string>
+    <string name="type9">其他</string>
 </resources>

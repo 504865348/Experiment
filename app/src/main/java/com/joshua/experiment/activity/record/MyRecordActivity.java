@@ -100,7 +100,7 @@ public class MyRecordActivity extends AppCompatActivity {
              */
             mMyRecordings.clear();
             String path = Environment.getExternalStorageDirectory().getPath();
-            File mediaStorageDir = new File(path + "/crafts_videos");
+            File mediaStorageDir = new File(path + "/bdsy_videos");
             File[] files = mediaStorageDir.listFiles();
             if (files == null) {
                 isEmpty = true;
@@ -163,7 +163,7 @@ public class MyRecordActivity extends AppCompatActivity {
                         // 如果追求更好的话可以利用 ThumbnailUtils.extractThumbnail 把缩略图转化为的制定大小
 //                        ThumbnailUtils.extractThumbnail(bitmap, width,height ,ThumbnailUtils.OPTIONS_RECYCLE_INPUT);
 
-                        copyFile(imagePath,Environment.getExternalStorageDirectory().getPath() + "/crafts_videos/" + title);
+                        copyFile(imagePath,Environment.getExternalStorageDirectory().getPath() + "/bdsy_videos/" + title);
                         GetVideoFiles();
                         mAdapter.notifyDataSetChanged();
                     }

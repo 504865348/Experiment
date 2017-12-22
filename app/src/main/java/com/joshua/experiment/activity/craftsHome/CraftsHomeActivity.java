@@ -110,7 +110,7 @@ public class CraftsHomeActivity extends BaseActivity implements View.OnClickList
         mCraftQAFragment = new CraftQAFragment();
         mFragmentList.add(mCraftDetailFragment);
         mFragmentList.add(mCraftAlbumFragment);
-        mFragmentList.add(mCraftQAFragment);
+//        mFragmentList.add(mCraftQAFragment);
         /**
          * 设置适配器和初始选中项
          */
@@ -131,7 +131,7 @@ public class CraftsHomeActivity extends BaseActivity implements View.OnClickList
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                 LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) mTabLine.getLayoutParams();
-                lp.leftMargin = screenWidth / 3 * position + positionOffsetPixels / 3;
+                lp.leftMargin = screenWidth / 2 * position + positionOffsetPixels / 2;
                 mTabLine.setLayoutParams(lp);
             }
 
@@ -145,9 +145,9 @@ public class CraftsHomeActivity extends BaseActivity implements View.OnClickList
                     case 1:
                         mCraftsTvAlbum.setTextColor(Color.RED);
                         break;
-                    case 2:
-                        mCraftsTvQA.setTextColor(Color.RED);
-                        break;
+//                    case 2:
+//                        mCraftsTvQA.setTextColor(Color.RED);
+//                        break;
                 }
             }
 
@@ -174,7 +174,7 @@ public class CraftsHomeActivity extends BaseActivity implements View.OnClickList
         getWindow().getWindowManager().getDefaultDisplay().getMetrics(dpMetrics);
         screenWidth = dpMetrics.widthPixels;
         LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) mTabLine.getLayoutParams();
-        lp.width = screenWidth / 3;
+        lp.width = screenWidth / 2;
         mTabLine.setLayoutParams(lp);
     }
 

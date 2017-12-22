@@ -2,7 +2,7 @@ package com.joshua.experiment.entity;
 
 /**
  * Created by nzz on 2017/5/8.
- * 首页--热门--听专题
+ * 首页--热门--大学
  */
 
 public class HotListen {

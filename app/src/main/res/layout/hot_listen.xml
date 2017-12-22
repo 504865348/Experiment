@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10dp"
-            android:text="听专题"
+            android:text="大学"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
     </android.support.v7.widget.Toolbar>

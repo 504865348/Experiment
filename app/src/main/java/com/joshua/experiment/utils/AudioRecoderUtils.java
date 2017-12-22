@@ -19,8 +19,8 @@ public class AudioRecoderUtils {
     //文件夹路径
     private String FolderPath;
 
-    public final static String RECODE_PATH = Environment.getExternalStorageDirectory() + "/craftsman/record/";
-    public final static String VIDEO_PATH = Environment.getExternalStorageDirectory() + "/craftsman/video/";
+    public final static String RECODE_PATH = Environment.getExternalStorageDirectory() + "/bdsy/record/";
+    public final static String VIDEO_PATH = Environment.getExternalStorageDirectory() + "/bdsy/video/";
 
     private MediaRecorder mMediaRecorder;
     private final String TAG = "fan";

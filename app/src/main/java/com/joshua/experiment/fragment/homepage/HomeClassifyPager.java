@@ -39,10 +39,11 @@ public class HomeClassifyPager extends BaseFragment implements View.OnClickListe
 //            "房屋建筑", "市政公用", "机电工程",
 //            "公路", "水利水电", "铁路工程",
 //            "矿业工程", "民航机场工程", "通信广电工程"};
-    private String classiyFlag[] = new String[]{
-            "房屋建筑", "市政道路", "城市桥梁",
-            "轨道交通", "给水排水", "城市管道",
-            "园林绿化与附属工程", "农艺", "艺术及其它"};
+
+//    private String classiyFlag[] = new String[]{
+//            "房屋建筑", "市政道路", "城市桥梁",
+//            "轨道交通", "给水排水", "城市管道",
+//            "园林绿化与附属工程", "农艺", "艺术及其它"};
 
     public HomeClassifyPager( ) {
 
@@ -83,31 +84,31 @@ public class HomeClassifyPager extends BaseFragment implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.home_page_classify_construction:
-                putClassifyFlag(classiyFlag[0]);
+                putClassifyFlag(getResources().getString(R.string.type1));
                 break;
             case R.id.home_page_classify_civilization:
-                putClassifyFlag(classiyFlag[1]);
+                putClassifyFlag(getResources().getString(R.string.type2));
                 break;
             case R.id.home_page_classify_electric:
-                putClassifyFlag(classiyFlag[2]);
+                putClassifyFlag(getResources().getString(R.string.type3));
                 break;
             case R.id.home_page_classify_road:
-                putClassifyFlag(classiyFlag[3]);
+                putClassifyFlag(getResources().getString(R.string.type4));
                 break;
             case R.id.home_page_classify_water_cons:
-                putClassifyFlag(classiyFlag[4]);
+                putClassifyFlag(getResources().getString(R.string.type5));
                 break;
             case R.id.home_page_classify_railway:
-                putClassifyFlag(classiyFlag[5]);
+                putClassifyFlag(getResources().getString(R.string.type6));
                 break;
             case R.id.home_page_classify_mining:
-                putClassifyFlag(classiyFlag[6]);
+                putClassifyFlag(getResources().getString(R.string.type7));
                 break;
             case R.id.home_page_classify_airport:
-                putClassifyFlag(classiyFlag[7]);
+                putClassifyFlag(getResources().getString(R.string.type8));
                 break;
             case R.id.home_page_classify_communication:
-                putClassifyFlag(classiyFlag[8]);
+                putClassifyFlag(getResources().getString(R.string.type9));
                 break;
         }
     }

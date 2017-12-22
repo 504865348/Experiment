@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10dp"
-            android:text="看利器"
+            android:text="民间"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
     </android.support.v7.widget.Toolbar>

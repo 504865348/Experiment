@@ -52,7 +52,7 @@
                 android:layout_marginTop="4dp">
                 <TextView
                     style="@style/album_detail_intro_small"
-                    android:text="工匠："/>
+                    android:text="名师："/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

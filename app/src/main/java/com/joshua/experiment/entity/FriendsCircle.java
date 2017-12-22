@@ -2,7 +2,7 @@ package com.joshua.experiment.entity;
 
 /**
  * Created by nzz on 2017/5/10.
- * 匠友圈------暂定不用,待修改
+ * 师生圈------暂定不用,待修改
  */
 
 public class FriendsCircle {

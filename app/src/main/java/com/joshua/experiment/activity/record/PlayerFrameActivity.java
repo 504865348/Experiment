@@ -210,7 +210,7 @@ public class PlayerFrameActivity extends BaseActivity implements View.OnClickLis
      */
     private void share() {
         share_media=SHARE_MEDIA.WEIXIN.toSnsPlatform().mPlatform;
-        web = new UMWeb("http://139.224.35.126:8080/linlin/Gongjiang.apk");
+        web = new UMWeb("http://139.224.35.126:8080/linlin/shiyan.apk");
         web.setTitle("必得工匠");
         web.setThumb(new UMImage(this, R.drawable.share_icon));
         web.setDescription("匠者-传技授得解惑——技，技能；得，心得；惑，疑问。颠覆传统技艺传播方式，提供创新的技艺传播交流平台。");

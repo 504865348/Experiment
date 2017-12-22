@@ -227,7 +227,7 @@ public class CreateAlbumActivity extends BaseActivity {
         String typeName = mType;
         String modelName = mModel;
         String creater = PrefUtils.getString(mBaseActivity, "phone", "");
-        String absPath = Environment.getExternalStorageDirectory() + "/craftsman/" + PrefUtils.getString(mBaseActivity, "phone", "");
+        String absPath = Environment.getExternalStorageDirectory() + "/bdsy/" + PrefUtils.getString(mBaseActivity, "phone", "");
         File file = new File(absPath, IMAGE_FILE_NAME + ".JPEG");
         RequestBody fileBody = RequestBody.create(MediaType.parse("application/octet-stream;charset=utf-8"), file);
         RequestBody requestBody = new MultipartBody.Builder()

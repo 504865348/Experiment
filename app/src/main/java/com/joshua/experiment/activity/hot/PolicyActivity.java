@@ -57,7 +57,7 @@ public class PolicyActivity extends BaseActivity {
     }
 
     private void getDataFromServer() {
-        getJZC();//讲政策
+        getJZC();//高中
     }
 
     private void getJZC() {

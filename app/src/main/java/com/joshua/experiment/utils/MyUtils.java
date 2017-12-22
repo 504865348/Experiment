@@ -245,7 +245,7 @@ public class MyUtils extends Activity {
      */
     public static void saveBitmap(Bitmap bitmap, String user, String picName) {
         //sd卡保存路径
-        String absPath = Environment.getExternalStorageDirectory() + "/craftsman/" + user;
+        String absPath = Environment.getExternalStorageDirectory() + "/bdsy/" + user;
         try {
             File category = new File(absPath);
             File file = new File(absPath, picName + ".JPEG");

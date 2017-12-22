@@ -103,6 +103,7 @@
             android:textSize="12sp"
             android:text="关注" />
         <Button
+            android:visibility="gone"
             android:id="@+id/crafts_image_ask"
             android:layout_width="124dp"
             android:layout_height="25dp"

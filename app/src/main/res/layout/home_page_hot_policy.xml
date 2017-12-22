@@ -11,7 +11,7 @@
         android:gravity="center_vertical">
         <TextView
             style="@style/home_page_hot_title_text"
-            android:text="讲政策"/>
+            android:text="@string/gaozhong"/>
         <TextView
             android:id="@+id/home_page_hot_more_policy"
             style="@style/home_page_hot_more_text"/>

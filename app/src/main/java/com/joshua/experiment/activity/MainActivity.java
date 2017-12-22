@@ -126,7 +126,7 @@ public class MainActivity extends BaseActivity {
         mFragments = new ArrayList<>();
         mFragments.add(new HomeFragment());
         mFragments.add(new BillBoardFragment());
-        mFragments.add(new QAFragment());
+//        mFragments.add(new QAFragment());
         mFragments.add(new FindFragment());
         String type = PrefUtils.getString(mBaseActivity, "type", "normal");
         if (type.equals("normal")) {
@@ -190,14 +190,14 @@ public class MainActivity extends BaseActivity {
                     case R.id.main_rb_billboard:
                         position = 1;
                         break;
-                    case R.id.main_rb_question:
+//                    case R.id.main_rb_question:
+//                        position = 2;
+//                        break;
+                    case R.id.main_rb_discover:
                         position = 2;
                         break;
-                    case R.id.main_rb_discover:
-                        position = 3;
-                        break;
                     case R.id.main_rb_my_info:
-                        position = 4;
+                        position = 3;
                         break;
                     default:
                         position = 0;

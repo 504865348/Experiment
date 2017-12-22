@@ -33,7 +33,7 @@
 
                 <TextView
                     style="@style/home_page_classify_text"
-                    android:text="房屋建筑" />
+                    android:text="@string/type1" />
             </LinearLayout>
 
             <View
@@ -52,7 +52,7 @@
 
                 <TextView
                     style="@style/home_page_classify_text"
-                    android:text="市政道路" />
+                    android:text="@string/type2" />
             </LinearLayout>
         </LinearLayout>
 
@@ -73,7 +73,7 @@
 
                 <TextView
                     style="@style/home_page_classify_text"
-                    android:text="城市桥梁" />
+                    android:text="@string/type3" />
             </LinearLayout>
 
             <View
@@ -92,7 +92,7 @@
 
                 <TextView
                     style="@style/home_page_classify_text"
-                    android:text="轨道交通" />
+                    android:text="@string/type4" />
             </LinearLayout>
         </LinearLayout>
 
@@ -113,7 +113,7 @@
 
                 <TextView
                     style="@style/home_page_classify_text"
-                    android:text="给水排水" />
+                    android:text="@string/type5" />
             </LinearLayout>
 
             <View
@@ -132,7 +132,7 @@
 
                 <TextView
                     style="@style/home_page_classify_text"
-                    android:text="城市管道" />
+                    android:text="@string/type6" />
             </LinearLayout>
         </LinearLayout>
 
@@ -153,7 +153,7 @@
 
                 <TextView
                     style="@style/home_page_classify_text"
-                    android:text="园林绿化与附属工程" />
+                    android:text="@string/type7" />
             </LinearLayout>
 
             <View
@@ -172,7 +172,7 @@
 
                 <TextView
                     style="@style/home_page_classify_text"
-                    android:text="农艺" />
+                    android:text="@string/type8" />
             </LinearLayout>
         </LinearLayout>
 
@@ -198,7 +198,7 @@
 
                 <TextView
                     style="@style/home_page_classify_text"
-                    android:text="艺术及其它" />
+                    android:text="@string/type9" />
             </LinearLayout>
 
             <LinearLayout

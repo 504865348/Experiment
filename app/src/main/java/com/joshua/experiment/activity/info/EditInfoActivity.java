@@ -289,7 +289,7 @@ showInfo();
 
     private void postDataToServer() {
         String userAccount = PrefUtils.getString(mBaseActivity, "phone", "");
-        String absPath = Environment.getExternalStorageDirectory() + "/craftsman/" + PrefUtils.getString(mBaseActivity, "phone", "");
+        String absPath = Environment.getExternalStorageDirectory() + "/bdsy/" + PrefUtils.getString(mBaseActivity, "phone", "");
         File file = new File(absPath, IMAGE_FILE_NAME + ".JPEG");
         RequestBody fileBody = RequestBody.create(MediaType.parse("application/octet-stream;charset=utf-8"), file);
         RequestBody requestBody = new MultipartBody.Builder()
@@ -351,7 +351,7 @@ showInfo();
         tvSex.setText(sp.getString("sex", ""));
         tvBirthday.setText(sp.getString("birthday", ""));
         tvAddress.setText(sp.getString("address", ""));
-        ivMyImage.setImageURI(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/craftsman/" + PrefUtils.getString(mBaseActivity, "phone", "") + "/headImage.JPEG")));
+        ivMyImage.setImageURI(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/bdsy/" + PrefUtils.getString(mBaseActivity, "phone", "") + "/headImage.JPEG")));
     }
 
     private void showErrorMsg(String value) {

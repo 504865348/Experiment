@@ -12,7 +12,7 @@
 
         <TextView
             style="@style/home_page_hot_title_text"
-            android:text="看利器"/>
+            android:text="@string/minjian"/>
 
         <TextView
             android:id="@+id/home_page_hot_more_look"

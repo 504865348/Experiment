@@ -63,7 +63,7 @@ public class MunicipalFragment extends BaseFragment {
     }
 
     private void getDataFromServer() {
-        getMunicipal("市政道路");
+        getMunicipal(getResources().getString(R.string.type2));
     }
 
     private void getMunicipal(String keyWord) {

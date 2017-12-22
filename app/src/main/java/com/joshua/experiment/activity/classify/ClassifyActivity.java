@@ -39,10 +39,7 @@ public class ClassifyActivity extends BaseActivity implements View.OnClickListen
     @BindView(R.id.classify_tool_bar)
     Toolbar classifyToolBar;
 
-    private String strTitle[] = new String[]{
-            "房屋建筑", "市政道路", "城市桥梁",
-            "轨道交通", "给水排水", "城市管道",
-            "园林绿化与附属工程", "农艺", "艺术及其它"};
+    private  String strTitle[];
     private String itemClassifyFlag;
     private Fragment[] mFragmentArrays = new Fragment[9];
 
@@ -52,9 +49,24 @@ public class ClassifyActivity extends BaseActivity implements View.OnClickListen
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.classify);
         ButterKnife.bind(this);
+        initData();
         classifyToolBar.setOnClickListener(this);
         itemClassifyFlag = getIntent().getStringExtra("classifyFlag");
         initView();
+    }
+
+    private void initData() {
+        strTitle = new String[]{
+                getResources().getString(R.string.type1),
+                getResources().getString(R.string.type2),
+                getResources().getString(R.string.type3),
+                getResources().getString(R.string.type4),
+                getResources().getString(R.string.type5),
+                getResources().getString(R.string.type6),
+                getResources().getString(R.string.type7),
+                getResources().getString(R.string.type8),
+                getResources().getString(R.string.type9)
+        };
     }
 
     private void initView() {
@@ -100,7 +112,7 @@ public class ClassifyActivity extends BaseActivity implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.classify_tool_bar:
-                startActivity(new Intent(mBaseActivity, MainActivity.class));
+                finish();
                 break;
         }
     }

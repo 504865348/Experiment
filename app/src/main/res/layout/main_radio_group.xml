@@ -35,6 +35,7 @@
             android:drawableTop="@drawable/main_rb_billboard_selector" />
 
         <RadioButton
+            android:visibility="gone"
             android:id="@+id/main_rb_question"
             style="@style/Main_RadioButton"
             android:text="问答"

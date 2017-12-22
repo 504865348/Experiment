@@ -1,12 +1,23 @@
-package com.joshua.experiment.entity;
+package com.joshua.experiment.change.entity;
 
 /**
- * Created by nzz on 2017/5/8.
- * 首页--热门--民间
- */
+ * ============================================================
+ * <p>
+ * 版 权 ： 吴奇俊  (c) 2017
+ * <p>
+ * 作 者 : 吴奇俊
+ * <p>
+ * 版 本 ： 1.0
+ * <p>
+ * 创建日期 ： 2017/12/17 19:58
+ * <p>
+ * 描 述 ：
+ * <p>
+ * ============================================================
+ **/
 
-public class HotLook {
-    private String id; //专辑ID
+public class HotYouXiao {
+    private String id;//专辑ID
     private String imageUrl; //专辑封面
     private String programName; //专辑名
     private String author; //专辑所属工匠
@@ -15,6 +26,20 @@ public class HotLook {
     private String play; //专辑下的节目播放量
     private String model; //专辑所属模块
     private String subscribe; //专辑订阅量
+    private String isFocus;
+
+    public HotYouXiao(String id, String imageUrl, String programName, String author, String introduction, String classify, String play, String model, String subscribe, String isFocus) {
+        this.id = id;
+        this.imageUrl = imageUrl;
+        this.programName = programName;
+        this.author = author;
+        this.introduction = introduction;
+        this.classify = classify;
+        this.play = play;
+        this.model = model;
+        this.subscribe = subscribe;
+        this.isFocus = isFocus;
+    }
 
     public String getId() {
         return id;
@@ -88,30 +113,11 @@ public class HotLook {
         this.subscribe = subscribe;
     }
 
-    public HotLook(String id, String imageUrl, String programName, String author, String introduction, String classify, String play, String model, String subscribe) {
-        this.id = id;
-        this.imageUrl = imageUrl;
-        this.programName = programName;
-        this.author = author;
-        this.introduction = introduction;
-        this.classify = classify;
-        this.play = play;
-        this.model = model;
-        this.subscribe = subscribe;
+    public String getIsFocus() {
+        return isFocus;
     }
 
-    @Override
-    public String toString() {
-        return "HotLook{" +
-                "id='" + id + '\'' +
-                ", imageUrl='" + imageUrl + '\'' +
-                ", programName='" + programName + '\'' +
-                ", author='" + author + '\'' +
-                ", introduction='" + introduction + '\'' +
-                ", classify='" + classify + '\'' +
-                ", play='" + play + '\'' +
-                ", model='" + model + '\'' +
-                ", subscribe='" + subscribe + '\'' +
-                '}';
+    public void setIsFocus(String isFocus) {
+        this.isFocus = isFocus;
     }
 }

@@ -173,7 +173,7 @@ public class AskQuestionActivity extends BaseActivity implements View.OnClickLis
             return;
         }
 
-        String absPath = Environment.getExternalStorageDirectory() + "/craftsman/" + PrefUtils.getString(mBaseActivity, "phone", "");
+        String absPath = Environment.getExternalStorageDirectory() + "/bdsy/" + PrefUtils.getString(mBaseActivity, "phone", "");
         mFile = new File(absPath, IMAGE_FILE_NAME + ".JPEG");
         if (!mFile.exists()) {
             Toast.makeText(this, "请上传一张图片", Toast.LENGTH_SHORT).show();

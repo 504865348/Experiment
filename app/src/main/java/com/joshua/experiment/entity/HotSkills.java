@@ -2,7 +2,7 @@ package com.joshua.experiment.entity;
 
 /**
  * Created by nzz on 2017/5/8.
- * 首页--热门--匠心独运
+ * 首页--热门--初中
  */
 
 public class HotSkills {

@@ -2,7 +2,7 @@ package com.joshua.experiment.entity;
 
 /**
  * Created by nzz on 2017/5/8.
- * 首页--热门--讲政策
+ * 首页--热门--高中
  */
 
 public class HotPolicy {

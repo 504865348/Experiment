@@ -56,7 +56,7 @@ public class SkillsActivity extends BaseActivity {
     }
 
     private void getDataFromServer() {
-        getJXDY();//匠心独运
+        getJXDY();//初中
     }
 
     private void getJXDY() {

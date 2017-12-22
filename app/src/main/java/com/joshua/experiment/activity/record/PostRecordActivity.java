@@ -109,7 +109,7 @@ public class PostRecordActivity extends BaseActivity implements View.OnClickList
         if (name == null) {
             path = getIntent().getStringExtra("videoPath");
         } else {
-            path = Environment.getExternalStorageDirectory().getPath() + "/crafts_videos/" + name;
+            path = Environment.getExternalStorageDirectory().getPath() + "/bdsy_videos/" + name;
         }
         File file = new File(path);
         MediaPlayer mediaPlayer = new MediaPlayer();
@@ -223,9 +223,9 @@ public class PostRecordActivity extends BaseActivity implements View.OnClickList
             path = getIntent().getStringExtra("videoPath");
             String fileName=new File(path).getName();
 
-            path=Environment.getExternalStorageDirectory().getPath() + "/crafts_videos/" + fileName;
+            path=Environment.getExternalStorageDirectory().getPath() + "/bdsy_videos/" + fileName;
         } else {
-            path = Environment.getExternalStorageDirectory().getPath() + "/crafts_videos/" + name;
+            path = Environment.getExternalStorageDirectory().getPath() + "/bdsy_videos/" + name;
         }
 
 
@@ -291,7 +291,7 @@ public class PostRecordActivity extends BaseActivity implements View.OnClickList
         if (name == null) {
             path = getIntent().getStringExtra("videoPath");
         } else {
-            path = Environment.getExternalStorageDirectory().getPath() + "/crafts_videos/" + name;
+            path = Environment.getExternalStorageDirectory().getPath() + "/bdsy_videos/" + name;
         }
         File file = new File(path);
         MediaPlayer mediaPlayer = new MediaPlayer();

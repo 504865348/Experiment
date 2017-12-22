@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="工匠详情"
+            android:text="名师详情"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
     </android.support.v7.widget.Toolbar>
@@ -70,6 +70,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:visibility="gone"
             android:id="@+id/crafts_ll_q_a"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

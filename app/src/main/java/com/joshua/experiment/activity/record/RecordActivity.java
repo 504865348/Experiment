@@ -310,7 +310,7 @@ public class RecordActivity extends BaseActivity implements SurfaceHolder.Callba
              * 选择自己的文件夹
              */
             String path = Environment.getExternalStorageDirectory().getPath();
-            File mediaStorageDir = new File(path + "/crafts_videos");
+            File mediaStorageDir = new File(path + "/bdsy_videos");
             if (!mediaStorageDir.exists()) {
                 if (!mediaStorageDir.mkdirs()) {
                     Log.e("TAG", "文件夹创建失败");

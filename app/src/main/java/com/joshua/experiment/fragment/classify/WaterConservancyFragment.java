@@ -63,7 +63,7 @@ public class WaterConservancyFragment extends BaseFragment {
     }
 
     private void getDataFromServer() {
-        getWaterConservancy("给水排水");
+        getWaterConservancy(getResources().getString(R.string.type5));
     }
 
     private void getWaterConservancy(String keyWord) {

@@ -162,7 +162,7 @@ public class PublicInfoFragment extends BaseFragment implements View.OnClickList
         else
             myInfoPublicUserName.setText(sp.getString("nickName", ""));
         myInfoPublicUserAccount.setText(userClass);
-        mMyInfoPublicPicture.setImageURI(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/craftsman/" + PrefUtils.getString(getActivity(), "phone", "") + "/headImage.JPEG")));
+        mMyInfoPublicPicture.setImageURI(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/bdsy/" + PrefUtils.getString(getActivity(), "phone", "") + "/headImage.JPEG")));
 
     }
 

@@ -92,9 +92,10 @@
                 android:background="@drawable/next_more"/>
         </LinearLayout>
 
-        <View style="@style/horizontal_split"/>
+        <!--<View style="@style/horizontal_split"/>-->
 
         <LinearLayout
+            android:visibility="gone"
             android:id="@+id/my_info_my_q_a"
             style="@style/my_info_linear">
 

@@ -15,18 +15,21 @@ import android.widget.TextView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.joshua.experiment.R;
+
 import com.joshua.experiment.activity.hot.CraftsActivity;
 import com.joshua.experiment.activity.hot.ListenActivity;
 import com.joshua.experiment.activity.hot.LookActivity;
 import com.joshua.experiment.activity.hot.PolicyActivity;
 import com.joshua.experiment.activity.hot.SkillsActivity;
+import com.joshua.experiment.activity.hot.YouXiaoActivity;
 import com.joshua.experiment.adapter.HotCraftsAdapter;
 import com.joshua.experiment.adapter.HotListenAdapter;
 import com.joshua.experiment.adapter.HotLookAdapter;
 import com.joshua.experiment.adapter.HotPolicyAdapter;
 import com.joshua.experiment.adapter.HotSkillsAdapter;
+import com.joshua.experiment.change.adapter.HotYouXiaoAdapter;
+import com.joshua.experiment.change.entity.HotYouXiao;
 import com.joshua.experiment.entity.CarouselPic;
-import com.joshua.experiment.entity.HotCraftsman;
 import com.joshua.experiment.entity.HotListen;
 import com.joshua.experiment.entity.HotLook;
 import com.joshua.experiment.entity.HotPolicy;
@@ -87,7 +90,7 @@ public class HomeHotPager extends BaseFragment implements View.OnClickListener {
     TextView homePageHotMoreLook;
 
     private List<CarouselPic> list_pic;
-    private List<HotCraftsman> list_DGGJ;
+    private List<HotYouXiao> list_DGGJ;
     private List<HotSkills> list_JXDY;
     private List<HotPolicy> list_JZC;
     private List<HotListen> list_TZT;
@@ -142,10 +145,10 @@ public class HomeHotPager extends BaseFragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.hot_middle_image_crafts:
-                startActivity(new Intent(getActivity(), CraftsActivity.class));
+                startActivity(new Intent(getActivity(), YouXiaoActivity.class));
                 break;
             case R.id.home_page_hot_more_crafts:
-                startActivity(new Intent(getActivity(), CraftsActivity.class));
+                startActivity(new Intent(getActivity(), YouXiaoActivity.class));
                 break;
             case R.id.hot_middle_image_skills:
                 startActivity(new Intent(getActivity(), SkillsActivity.class));
@@ -192,10 +195,10 @@ public class HomeHotPager extends BaseFragment implements View.OnClickListener {
                 .build();
         getBanner();//轮播图
         getDGGJ();//大国工匠
-        getJXDY();//匠心独运
-        getJZC();//讲政策
-        getTZT();//听专题
-        getKLQ();//看利器
+        getJXDY();//初中
+        getJZC();//高中
+        getTZT();//大学
+        getKLQ();//民间
     }
 
     /**
@@ -203,7 +206,7 @@ public class HomeHotPager extends BaseFragment implements View.OnClickListener {
      */
     private void getDGGJ() {
         RequestBody params = new FormBody.Builder()
-                .add("method", Server.HOME_HOT_CRAFTSMAN)
+                .add("method", Server.HOME_HOT_YOUXIAO)
                 .build();
 
         final Request request = new Request.Builder()
@@ -323,9 +326,9 @@ public class HomeHotPager extends BaseFragment implements View.OnClickListener {
      */
     private void parseDGGJ(String result) {
         Gson gson = new Gson();
-        list_DGGJ = gson.fromJson(result, new TypeToken<List<HotCraftsman>>() {
+        list_DGGJ = gson.fromJson(result, new TypeToken<List<HotYouXiao>>() {
         }.getType());
-        if (list_DGGJ.get(0).getCraftsmanName().equals("null")) {
+        if (list_DGGJ.get(0).getProgramName().equals("null")) {
             getActivity().runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -439,7 +442,7 @@ public class HomeHotPager extends BaseFragment implements View.OnClickListener {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         hot_crafts_rv.setLayoutManager(linearLayoutManager);
-        hot_crafts_rv.setAdapter(new HotCraftsAdapter(getActivity(), list_DGGJ));
+        hot_crafts_rv.setAdapter(new HotYouXiaoAdapter(getActivity(), list_DGGJ));
     }
 
     private void initRecycleJXDY() {

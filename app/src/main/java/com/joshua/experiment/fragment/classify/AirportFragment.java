@@ -63,7 +63,7 @@ public class AirportFragment extends BaseFragment {
     }
 
     private void getDataFromServer() {
-        getAirport("农艺");
+        getAirport(getResources().getString(R.string.type8));
     }
 
     private void getAirport(String keyWord) {

@@ -57,7 +57,7 @@ public class ListenActivity extends BaseActivity {
     }
 
     private void getDataFromServer() {
-        getTZT();//听专题
+        getTZT();//大学
     }
 
     private void getTZT() {

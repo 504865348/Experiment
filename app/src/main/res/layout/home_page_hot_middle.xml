@@ -17,7 +17,7 @@
             android:src="@drawable/hot_middle_crafts" />
         <TextView
             style="@style/home_page_hot_middle_text"
-            android:text="大国工匠" />
+            android:text="@string/youxiao" />
 
     </LinearLayout>
 
@@ -34,7 +34,7 @@
 
         <TextView
             style="@style/home_page_hot_middle_text"
-            android:text="匠心独运"/>
+            android:text="@string/chuzhong"/>
 
     </LinearLayout>
 
@@ -51,7 +51,7 @@
 
         <TextView
             style="@style/home_page_hot_middle_text"
-            android:text="讲政策"/>
+            android:text="@string/gaozhong"/>
 
     </LinearLayout>
 
@@ -68,7 +68,7 @@
 
         <TextView
             style="@style/home_page_hot_middle_text"
-            android:text="听专题"/>
+            android:text="@string/daxue"/>
 
     </LinearLayout>
 
@@ -85,7 +85,7 @@
 
         <TextView
             style="@style/home_page_hot_middle_text"
-            android:text="看利器"/>
+            android:text="@string/minjian"/>
 
     </LinearLayout>
 

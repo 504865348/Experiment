@@ -45,9 +45,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="必得匠心"
+        android:text="必得实验"
         android:textColor="@color/black"
-        android:textSize="18dp" />
+        android:textSize="18dp"/>
     <TextView
         android:id="@+id/tv_version"
         android:layout_width="wrap_content"

@@ -12,7 +12,7 @@ public class Classify {
     private String title; //专辑标题
     private String craftsmanName; //工匠名
     private String introduction; //专辑简介
-    private String model; //所属模块(匠心独运 讲政策 听专题 看利器)
+    private String model; //所属模块(初中 高中 大学 民间)
     private String classify;//专辑所属分类
     private String play; //专辑下的节目播放量
     private String subscribe; //专辑订阅量
